@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+            button {
+                background-color: #b39c2a;
+                color: white;
+                padding: 15px 20px;
+                border: none;
+                border-radius: 10px;
+                font-size: 18px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            button:hover {
+                background-color: #6eb8c2;
+                transform: scale(1.1);
+            }
+            h2 {
+                background-color: rgb(240, 255, 194);
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 40px;
+            }
+            p {
+                background-color: rgb(254, 237, 186);
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 30px;
+            }
+            body {
+                background-color: antiquewhite;
+            }
+            
+        </style>
+    </head>
+
+<body>
+    <center>
+        <h2>JavaScript Array -- Sort and reverse</h2>
+        <p>Click the buttons to sort and reverse the array.</p>
+
+        <button onclick="sortfunction()">Sort Me</button>
+        <br><br>
+        <button onclick="reversefunction()">Reverse Me</button>
+        <p id="result"></p>
+        
+        <script>
+            var fruits = ["Apple", "Orange", "Banana", "Mango", "Grapes"];
+
+            document.getElementById("result").innerHTML = fruits;
+            function sortfunction() {
+                fruits.sort();
+                document.getElementById("result").innerHTML = fruits;
+            }
+            function reversefunction() {
+                fruits.reverse();
+                document.getElementById("result").innerHTML = fruits;
+            }
+
+        </script>
+    </center>
+</body>
+</html>
